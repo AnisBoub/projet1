@@ -21,7 +21,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5  # Utilisation de la version mise à jour de actions/setup-python
         with:
-          python-version: '3.x13'  # Remplacez par la version Python souhaitée
+          python-version: '3.13'  # Remplacez par la version Python souhaitée
 
 
 
