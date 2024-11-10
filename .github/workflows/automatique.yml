@@ -2,9 +2,11 @@ name: Python Tests
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - master  # Assurez-vous que la branche spécifiée est 'master'
   pull_request:
-    branches: [ main ]
+    branches:
+      - master  # Assurez-vous que la branche spécifiée est 'master'
 
 jobs:
   test:
@@ -17,7 +19,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'  # Remplacez par la version Python désirée, ex: '3.9'
+          python-version: '3.x'  # Remplacez par la version Python désirée
 
       - name: Install dependencies
         run: |
